@@ -2,6 +2,7 @@
 import {_} from "./js/_.js";
 
 import {GameClient} from "./js/system/GameClient.js";
+import {WebService} from "./js/system/WebService.js";
 import {Render} from "./js/system/Render.js";
 import {Controls} from "./js/system/Controls.js";
 import {Scene} from "./js/system/Scene.js";
@@ -13,6 +14,7 @@ import {ServerNotification} from "./js/system/ServerNotification.js";
 window._ = _;
 
 window.GameClient = GameClient;
+window.WebService = WebService;
 window.Render = Render;
 window.Controls = Controls;
 window.Scene = Scene;
