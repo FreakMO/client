@@ -7,6 +7,15 @@ function ServerNotification() {
 	var scope = this;
 	var timer;
 	
+	var info = document.createElement( 'div' );
+	document.body.appendChild( info );
+	
+	info.style.position = 'absolute';
+	info.style.top = '10px';
+	info.style.width = '100%';
+	info.style.textAlign = 'center';
+	info.style.color = '#fff';
+	
 	//> функция вызываемая на тик таймера
 	
 	function onTimer() {
@@ -19,6 +28,7 @@ function ServerNotification() {
 			var minutes = Math.floor( scope.time % 3600 / 60 ); //> получили минуты
 			var seconds = scope.time % 60;						//> получили секунды
 		
+			info.innerHTML = scope.message + ' через ' + hours + ':' + minutes + ':' + seconds;
 			console.log( scope.message + ' через ' + hours + ':' + minutes + ':' + seconds );
 			
 		} else {

@@ -15,12 +15,16 @@ function GameClient() {
 	
 	//> Game Cycle
 	function render() {
+		
 		renderer.render( scene, camera );
+		
 	}
 	
 	function animate() {
+		
 		requestAnimationFrame( animate );
 		render();
+		
 	}
 	
 	//> Redefined update function
