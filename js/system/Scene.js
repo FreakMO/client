@@ -6,7 +6,7 @@ function Scene() {
 	
 	var scene = new THREE.Scene();
 	scene.background = new THREE.Color( background );
-	scene.fog = new THREE.Fog( background, 4000, 5000 );
+	scene.fog = new THREE.Fog( background, 3000, 4000 );
 	
 	var light = new THREE.AmbientLight( 0x666666 );
 	scene.add( light );
