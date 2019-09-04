@@ -29,7 +29,6 @@ function ServerNotification() {
 			var seconds = scope.time % 60;						//> получили секунды
 		
 			info.innerHTML = scope.message + ' через ' + hours + ':' + minutes + ':' + seconds;
-			console.log( scope.message + ' через ' + hours + ':' + minutes + ':' + seconds );
 			
 		} else {
 			
